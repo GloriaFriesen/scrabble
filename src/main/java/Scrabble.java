@@ -12,6 +12,8 @@ public class Scrabble {
     List threePointList = Arrays.asList(threePointLetters);
     String[] fourPointLetters = {"f", "h", "v", "w", "y"};
     List fourPointList = Arrays.asList(fourPointLetters);
+    String[] fivePointLetters = {"k"};
+    List fivePointList = Arrays.asList(fivePointLetters);
 
     Integer letterValue = 0;
     if (onePointList.contains(letters)) {
@@ -22,6 +24,8 @@ public class Scrabble {
       letterValue = 3;
     } else if (fourPointList.contains(letters)) {
       letterValue = 4;
+    } else if (fivePointList.contains(letters)) {
+      letterValue = 5;
     }
     return letterValue;
   }
