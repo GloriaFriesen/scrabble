@@ -8,12 +8,18 @@ public class Scrabble {
     List onePointList = Arrays.asList(onePointLetters);
     String[] twoPointLetters = {"d", "g"};
     List twoPointList = Arrays.asList(twoPointLetters);
+    String[] threePointLetters = {"b", "c", "m", "p"};
+    List threePointList = Arrays.asList(threePointLetters);
+
     Integer letterValue = 0;
     if (onePointList.contains(letters)) {
       letterValue = 1;
       return letterValue;
     } else if (twoPointList.contains(letters)){
       letterValue = 2;
+      return letterValue;
+    } else if (threePointList.contains(letters)) {
+      letterValue = 3;
       return letterValue;
     }
     return letterValue;

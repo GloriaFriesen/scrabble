@@ -35,4 +35,14 @@ public class ScrabbleTest {
     assertEquals(expected, testScrabble.calculateScore("d"));
     assertEquals(expected, testScrabble.calculateScore("g"));
   }
+
+  @Test
+  public void calculateScore_returnScoreForThreePointLetter_3(){
+    Scrabble testScrabble = new Scrabble();
+    Integer expected = 3;
+    assertEquals(expected, testScrabble.calculateScore("b"));
+    assertEquals(expected, testScrabble.calculateScore("c"));
+    assertEquals(expected, testScrabble.calculateScore("m"));
+    assertEquals(expected, testScrabble.calculateScore("p"));  
+  }
 }
