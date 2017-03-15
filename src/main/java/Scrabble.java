@@ -39,6 +39,12 @@ public class Scrabble {
   }
   public Integer calculateWordScore(String word) {
     Integer wordScore = 0;
+    String scrabbleWord = new String(word);
+    String[] scrabbleWordsArray = scrabbleWord.split("");
+    for ( String individualLetter : scrabbleWordsArray ) {
+      Integer letterScore = calculateScore(individualLetter);
+      wordScore += letterScore;
+    }
     return wordScore;
   }
 }
