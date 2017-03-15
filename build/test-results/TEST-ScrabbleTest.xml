@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ScrabbleTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-03-15T18:29:33" hostname="Epicodus-6C.local" time="0.003">
+<testsuite name="ScrabbleTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-03-15T18:37:15" hostname="Epicodus-6C.local" time="0.002">
   <properties/>
   <testcase name="calculateScore_returnScoreForFivePointLetter_5" classname="ScrabbleTest" time="0.001"/>
   <testcase name="calculateScore_returnsScoreForSingleLetter_1" classname="ScrabbleTest" time="0.0"/>
   <testcase name="calculateScore_returnScoreForThreePointLetter_3" classname="ScrabbleTest" time="0.0"/>
-  <testcase name="calculateScore_returnScoreForFourPointLetter_4" classname="ScrabbleTest" time="0.0"/>
+  <testcase name="calculateScore_returnScoreForFourPointLetter_4" classname="ScrabbleTest" time="0.001"/>
   <testcase name="calculateScore_returnsScoreForTwoPointLetter_2" classname="ScrabbleTest" time="0.0"/>
+  <testcase name="calculateScore_returnScoreForEightPointLetter_8" classname="ScrabbleTest" time="0.0"/>
   <testcase name="calculateScore_returnsScoreForOnePointLetters_1" classname="ScrabbleTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
