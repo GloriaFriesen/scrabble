@@ -16,6 +16,8 @@ public class Scrabble {
     List fivePointList = Arrays.asList(fivePointLetters);
     String[] eightPointLetters = {"j", "x"};
     List eightPointList = Arrays.asList(eightPointLetters);
+    String[] tenPointLetters = {"q", "z"};
+    List tenPointList = Arrays.asList(tenPointLetters);
 
     Integer letterValue = 0;
     if (onePointList.contains(letters)) {
@@ -30,6 +32,8 @@ public class Scrabble {
       letterValue = 5;
     } else if (eightPointList.contains(letters)) {
       letterValue = 8;
+    } else if (tenPointList.contains(letters)) {
+      letterValue = 10;
     }
     return letterValue;
   }
