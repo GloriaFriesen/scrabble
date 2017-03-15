@@ -73,10 +73,17 @@ public class ScrabbleTest {
   }
 
   @Test
-  public void calculateScore_returnScroreForTenPointLetter_10() {
+  public void calculateScore_returnScoreForTenPointLetter_10() {
     Scrabble testScrabble = new Scrabble();
     Integer expected = 10;
     assertEquals(expected, testScrabble.calculateScore("q"));
     assertEquals(expected, testScrabble.calculateScore("z"));
+  }
+
+  @Test
+  public void calculateWordScore_returnScoreForWord_5() {
+    Scrabble testScrabble = new Scrabble();
+    Integer expected = 5;
+    assertEquals(expected, testScrabble.calculateWordScore("cat"));
   }
 }

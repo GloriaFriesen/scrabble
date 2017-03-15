@@ -37,4 +37,8 @@ public class Scrabble {
     }
     return letterValue;
   }
+  public Integer calculateWordScore(String word) {
+    Integer wordScore = 0;
+    return wordScore;
+  }
 }
