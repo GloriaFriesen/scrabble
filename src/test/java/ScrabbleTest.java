@@ -43,6 +43,17 @@ public class ScrabbleTest {
     assertEquals(expected, testScrabble.calculateScore("b"));
     assertEquals(expected, testScrabble.calculateScore("c"));
     assertEquals(expected, testScrabble.calculateScore("m"));
-    assertEquals(expected, testScrabble.calculateScore("p"));  
+    assertEquals(expected, testScrabble.calculateScore("p"));
+  }
+
+  @Test
+  public void calculateScore_returnScoreForFourPointLetter_4() {
+    Scrabble testScrabble = new Scrabble();
+    Integer expected = 4;
+    assertEquals(expected, testScrabble.calculateScore("f"));
+    assertEquals(expected, testScrabble.calculateScore("h"));
+    assertEquals(expected, testScrabble.calculateScore("v"));
+    assertEquals(expected, testScrabble.calculateScore("w"));
+    assertEquals(expected, testScrabble.calculateScore("y")); 
   }
 }

@@ -10,17 +10,18 @@ public class Scrabble {
     List twoPointList = Arrays.asList(twoPointLetters);
     String[] threePointLetters = {"b", "c", "m", "p"};
     List threePointList = Arrays.asList(threePointLetters);
+    String[] fourPointLetters = {"f", "h", "v", "w", "y"};
+    List fourPointList = Arrays.asList(fourPointLetters);
 
     Integer letterValue = 0;
     if (onePointList.contains(letters)) {
       letterValue = 1;
-      return letterValue;
     } else if (twoPointList.contains(letters)){
       letterValue = 2;
-      return letterValue;
     } else if (threePointList.contains(letters)) {
       letterValue = 3;
-      return letterValue;
+    } else if (fourPointList.contains(letters)) {
+      letterValue = 4;
     }
     return letterValue;
   }
